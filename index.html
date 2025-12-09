@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Calendário Editorial - Antônia Teodoro | Dezembro 2025 - Janeiro 2026</title>
     <style>
         * {
@@ -12,73 +12,70 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #333;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
         }
 
         /* Header */
         .header {
             background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            padding: 20px 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
             text-align: center;
         }
 
         .header h1 {
             color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 1.5em;
+            margin-bottom: 8px;
+            line-height: 1.2;
         }
 
         .header .subtitle {
             color: #666;
-            font-size: 1.2em;
-            margin-bottom: 20px;
+            font-size: 0.95em;
+            margin-bottom: 15px;
         }
 
         .header .period {
             display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 10px 30px;
-            border-radius: 50px;
+            padding: 8px 20px;
+            border-radius: 25px;
             font-weight: bold;
-            font-size: 1.1em;
+            font-size: 0.9em;
         }
 
         /* Stats Grid */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
         }
 
         .stat-card {
             background: white;
-            border-radius: 15px;
-            padding: 30px;
+            border-radius: 12px;
+            padding: 15px;
             text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-5px);
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
         }
 
         .stat-card .number {
-            font-size: 3em;
+            font-size: 2em;
             font-weight: bold;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
@@ -88,44 +85,39 @@
 
         .stat-card .label {
             color: #666;
-            font-size: 1.1em;
-            margin-top: 10px;
+            font-size: 0.85em;
+            margin-top: 5px;
         }
 
         /* Strategy Section */
         .strategy-section {
             background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            padding: 20px 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
 
         .strategy-section h2 {
             color: #667eea;
-            font-size: 2em;
-            margin-bottom: 20px;
+            font-size: 1.3em;
+            margin-bottom: 15px;
             border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-        }
-
-        .strategy-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            padding-bottom: 8px;
         }
 
         .strategy-item {
             background: #f8f9ff;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
             border-left: 4px solid #667eea;
+            margin-bottom: 12px;
         }
 
         .strategy-item h3 {
             color: #764ba2;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 1em;
         }
 
         .strategy-item ul {
@@ -134,8 +126,9 @@
         }
 
         .strategy-item li {
-            padding: 5px 0;
+            padding: 4px 0;
             color: #555;
+            font-size: 0.9em;
         }
 
         .strategy-item li:before {
@@ -147,45 +140,39 @@
         /* Timeline */
         .timeline {
             background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            padding: 20px 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
 
         .timeline h2 {
             color: #667eea;
-            font-size: 2em;
-            margin-bottom: 30px;
+            font-size: 1.3em;
+            margin-bottom: 20px;
             text-align: center;
         }
 
         .month-section {
-            margin-bottom: 40px;
+            margin-bottom: 25px;
         }
 
         .month-title {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 15px 30px;
+            padding: 12px 15px;
             border-radius: 10px;
-            font-size: 1.5em;
+            font-size: 1.2em;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .post-card {
             background: #f8f9ff;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 20px;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
             border-left: 5px solid #667eea;
-            transition: all 0.3s ease;
-        }
-
-        .post-card:hover {
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
-            transform: translateX(5px);
         }
 
         .post-card.special {
@@ -206,25 +193,21 @@
         }
 
         .post-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-            gap: 10px;
+            margin-bottom: 12px;
         }
 
         .post-date {
-            font-size: 1.3em;
+            font-size: 1.1em;
             font-weight: bold;
             color: #667eea;
+            margin-bottom: 8px;
         }
 
         .post-type {
             display: inline-block;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.75em;
             font-weight: bold;
             text-transform: uppercase;
         }
@@ -250,53 +233,57 @@
         }
 
         .post-title {
-            font-size: 1.4em;
+            font-size: 1.1em;
             color: #333;
-            margin-bottom: 10px;
+            margin: 10px 0;
             font-weight: bold;
+            line-height: 1.3;
         }
 
         .post-objective {
             color: #666;
             font-style: italic;
-            margin-bottom: 15px;
-            padding: 10px;
+            margin-bottom: 12px;
+            padding: 8px;
             background: white;
-            border-radius: 8px;
+            border-radius: 6px;
+            font-size: 0.9em;
         }
 
         .post-copy {
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 15px 0;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 12px 0;
             border: 1px solid #e0e0e0;
         }
 
         .post-copy h4 {
             color: #667eea;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 0.95em;
         }
 
         .post-copy pre {
             white-space: pre-wrap;
             word-wrap: break-word;
             font-family: inherit;
-            font-size: 0.95em;
-            line-height: 1.6;
+            font-size: 0.85em;
+            line-height: 1.5;
             color: #555;
         }
 
         .post-design {
             background: #FFF9E6;
-            padding: 15px;
+            padding: 12px;
             border-radius: 8px;
-            margin-top: 15px;
+            margin-top: 12px;
         }
 
         .post-design h4 {
             color: #764ba2;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 0.95em;
         }
 
         .post-design ul {
@@ -305,8 +292,9 @@
         }
 
         .post-design li {
-            padding: 5px 0;
+            padding: 4px 0;
             color: #555;
+            font-size: 0.85em;
         }
 
         .post-design li:before {
@@ -315,14 +303,15 @@
 
         .video-tips {
             background: #FFE5E5;
-            padding: 15px;
+            padding: 12px;
             border-radius: 8px;
-            margin-top: 15px;
+            margin-top: 12px;
         }
 
         .video-tips h4 {
             color: #E91E63;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 0.95em;
         }
 
         .video-tips ul {
@@ -331,8 +320,9 @@
         }
 
         .video-tips li {
-            padding: 5px 0;
+            padding: 4px 0;
             color: #555;
+            font-size: 0.85em;
         }
 
         .video-tips li:before {
@@ -342,59 +332,72 @@
         /* Footer */
         .footer {
             background: white;
-            border-radius: 20px;
-            padding: 30px;
+            border-radius: 15px;
+            padding: 20px 15px;
             text-align: center;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            margin-top: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
 
         .footer h3 {
             color: #667eea;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            font-size: 1.1em;
         }
 
         .footer p {
             color: #666;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 0.9em;
         }
 
         .footer .signature {
-            margin-top: 20px;
-            padding-top: 20px;
+            margin-top: 15px;
+            padding-top: 15px;
             border-top: 2px solid #eee;
             color: #764ba2;
             font-weight: bold;
+            font-size: 0.9em;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.8em;
+        /* Tablet adjustments */
+        @media (min-width: 600px) {
+            .container {
+                padding: 20px;
             }
-
+            
             .stats-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(4, 1fr);
             }
-
-            .strategy-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .post-header {
-                flex-direction: column;
-                align-items: flex-start;
+            
+            .header h1 {
+                font-size: 2em;
             }
         }
 
-        /* Print styles */
-        @media print {
-            body {
-                background: white;
+        /* Desktop adjustments */
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+                padding: 20px;
+            }
+            
+            .header {
+                padding: 40px;
+            }
+            
+            .header h1 {
+                font-size: 2.5em;
+            }
+            
+            .strategy-section,
+            .timeline {
+                padding: 40px;
             }
             
             .post-card {
-                page-break-inside: avoid;
+                padding: 30px;
             }
         }
     </style>
@@ -403,7 +406,7 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <h1>📅 Calendário Editorial Estratégico</h1>
+            <h1>📅 Calendário Editorial</h1>
             <p class="subtitle">Antônia Teodoro | Terapia Comportamental & DISC</p>
             <div class="period">Dezembro 2025 - Janeiro 2026</div>
         </div>
@@ -412,7 +415,7 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="number">11</div>
-                <div class="label">Conteúdos Totais</div>
+                <div class="label">Conteúdos</div>
             </div>
             <div class="stat-card">
                 <div class="number">4</div>
@@ -430,41 +433,39 @@
 
         <!-- Strategy Section -->
         <div class="strategy-section">
-            <h2>🎯 Estratégia de Conteúdo</h2>
-            <div class="strategy-grid">
-                <div class="strategy-item">
-                    <h3>Objetivo 1: Atendimentos Individuais</h3>
-                    <ul>
-                        <li>Posts: 20/12, 24/12, 03/01</li>
-                        <li>Foco em dor emocional</li>
-                        <li>Mudança comportamental</li>
-                        <li>CTA direto para agendamento</li>
-                    </ul>
-                </div>
-                <div class="strategy-item">
-                    <h3>Objetivo 2: Palestras Corporativas</h3>
-                    <ul>
-                        <li>Posts: 13/12, 17/12, 27/12, 10/01</li>
-                        <li>Foco em NR1 + DISC</li>
-                        <li>Segurança do trabalho</li>
-                        <li>Produtividade empresarial</li>
-                    </ul>
-                </div>
-                <div class="strategy-item">
-                    <h3>Objetivo 3: Autoridade & Educação</h3>
-                    <ul>
-                        <li>Posts: 10/12, 07/01</li>
-                        <li>Conteúdo educacional DISC</li>
-                        <li>Posicionamento como especialista</li>
-                        <li>Valor agregado ao público</li>
-                    </ul>
-                </div>
+            <h2>🎯 Estratégia</h2>
+            
+            <div class="strategy-item">
+                <h3>Atendimentos Individuais</h3>
+                <ul>
+                    <li>Posts: 20/12, 24/12, 03/01</li>
+                    <li>Foco em mudança comportamental</li>
+                    <li>CTA direto para agendamento</li>
+                </ul>
+            </div>
+            
+            <div class="strategy-item">
+                <h3>Palestras Corporativas</h3>
+                <ul>
+                    <li>Posts: 13/12, 17/12, 27/12, 10/01</li>
+                    <li>Foco em NR1 + DISC</li>
+                    <li>Segurança do trabalho</li>
+                </ul>
+            </div>
+            
+            <div class="strategy-item">
+                <h3>Autoridade & Educação</h3>
+                <ul>
+                    <li>Posts: 10/12, 07/01</li>
+                    <li>Conteúdo educacional DISC</li>
+                    <li>Posicionamento especialista</li>
+                </ul>
             </div>
         </div>
 
         <!-- Timeline -->
         <div class="timeline">
-            <h2>📆 Cronograma Detalhado</h2>
+            <h2>📆 Cronograma</h2>
 
             <!-- DEZEMBRO -->
             <div class="month-section">
@@ -473,14 +474,14 @@
                 <!-- 10/12 -->
                 <div class="post-card carrossel">
                     <div class="post-header">
-                        <div class="post-date">10/12 (Quarta-feira)</div>
+                        <div class="post-date">10/12 (Quarta)</div>
                         <div class="post-type carrossel">📊 Carrossel</div>
                     </div>
                     <div class="post-title">Os 4 Perfis DISC Explicados</div>
-                    <div class="post-objective">🎯 Objetivo: Educacional + Autoridade</div>
+                    <div class="post-objective">🎯 Educacional + Autoridade</div>
                     
                     <div class="post-copy">
-                        <h4>📱 COPY COMPLETA:</h4>
+                        <h4>📱 COPY:</h4>
                         <pre>Você já parou para pensar por que algumas pessoas são tão diferentes de você? 🤔
 
 Não é sobre certo ou errado. É sobre PERFIS COMPORTAMENTAIS.
@@ -522,11 +523,11 @@ Atendimento presencial e online disponível.
                     </div>
 
                     <div class="post-design">
-                        <h4>🎨 ORIENTAÇÕES DE DESIGN:</h4>
+                        <h4>🎨 DESIGN:</h4>
                         <ul>
-                            <li>Slide 1: Título "Os 4 Perfis DISC" + foto da Antônia</li>
-                            <li>Slides 2-5: Um slide para cada perfil com as cores correspondentes e características</li>
-                            <li>Slide 6: CTA para agendamento</li>
+                            <li>Slide 1: Título + foto da Antônia</li>
+                            <li>Slides 2-5: Cada perfil com cores</li>
+                            <li>Slide 6: CTA agendamento</li>
                         </ul>
                     </div>
                 </div>
@@ -534,24 +535,23 @@ Atendimento presencial e online disponível.
                 <!-- 13/12 -->
                 <div class="post-card reel">
                     <div class="post-header">
-                        <div class="post-date">13/12 (Sexta-feira)</div>
+                        <div class="post-date">13/12 (Sexta)</div>
                         <div class="post-type reel">🎥 Reel</div>
                     </div>
-                    <div class="post-title">Palestra Corporativa - NR1 e Saúde Mental</div>
-                    <div class="post-objective">🎯 Objetivo: Divulgar serviços corporativos</div>
+                    <div class="post-title">NR1 e Saúde Mental</div>
+                    <div class="post-objective">🎯 Divulgar serviços corporativos</div>
                     
                     <div class="video-tips">
-                        <h4>🎬 SUGESTÃO DE CORTE:</h4>
+                        <h4>🎬 CORTE:</h4>
                         <ul>
-                            <li>Usar trecho de palestra/atendimento da Antônia</li>
-                            <li>Importância da saúde mental no ambiente de trabalho</li>
-                            <li>Como a NR1 exige cuidado com o colaborador</li>
-                            <li>Prevenção de acidentes começa na mente</li>
+                            <li>Trecho de palestra da Antônia</li>
+                            <li>Saúde mental no trabalho</li>
+                            <li>NR1 e cuidado com colaborador</li>
                         </ul>
                     </div>
 
                     <div class="post-copy">
-                        <h4>📱 COPY COMPLETA:</h4>
+                        <h4>📱 COPY:</h4>
                         <pre>Sua empresa está realmente cumprindo a NR1? 🏢⚠️
 
 A Norma Regulamentadora 1 não fala só de EPIs e procedimentos.
@@ -584,12 +584,11 @@ Entre em contato e vamos conversar sobre como levar esse conteúdo para sua equi
                     </div>
 
                     <div class="video-tips">
-                        <h4>🎥 DICAS TÉCNICAS:</h4>
+                        <h4>🎥 TÉCNICAS:</h4>
                         <ul>
-                            <li>Duração: 15-30 segundos</li>
-                            <li>Legendas grandes e legíveis</li>
-                            <li>Música corporativa inspiradora</li>
-                            <li>Mostrar Antônia em ação (se possível)</li>
+                            <li>15-30 segundos</li>
+                            <li>Legendas grandes</li>
+                            <li>Música corporativa</li>
                         </ul>
                     </div>
                 </div>
@@ -597,14 +596,14 @@ Entre em contato e vamos conversar sobre como levar esse conteúdo para sua equi
                 <!-- 17/12 -->
                 <div class="post-card post">
                     <div class="post-header">
-                        <div class="post-date">17/12 (Terça-feira)</div>
-                        <div class="post-type post">📝 Post Estático</div>
+                        <div class="post-date">17/12 (Terça)</div>
+                        <div class="post-type post">📝 Post</div>
                     </div>
-                    <div class="post-title">Você sabe se comunicar com cada perfil?</div>
-                    <div class="post-objective">🎯 Objetivo: Educacional + Isca para empresas</div>
+                    <div class="post-title">Comunicar com cada perfil</div>
+                    <div class="post-objective">🎯 Educacional + Isca empresas</div>
                     
                     <div class="post-copy">
-                        <h4>📱 COPY COMPLETA:</h4>
+                        <h4>📱 COPY:</h4>
                         <pre>A maior parte dos conflitos no trabalho acontece por um único motivo:
 
 ❌ FALHA DE COMUNICAÇÃO
@@ -646,12 +645,11 @@ Chama no direct e vamos conversar.
                     </div>
 
                     <div class="post-design">
-                        <h4>🎨 ORIENTAÇÕES DE DESIGN:</h4>
+                        <h4>🎨 DESIGN:</h4>
                         <ul>
                             <li>Fundo profissional</li>
-                            <li>Dividir os 4 perfis em quadrantes coloridos</li>
-                            <li>Foto da Antônia em ambiente corporativo</li>
-                            <li>Design clean e corporativo</li>
+                            <li>4 perfis em quadrantes coloridos</li>
+                            <li>Foto Antônia corporativo</li>
                         </ul>
                     </div>
                 </div>
@@ -659,13 +657,572 @@ Chama no direct e vamos conversar.
                 <!-- 20/12 -->
                 <div class="post-card reel">
                     <div class="post-header">
-                        <div class="post-date">20/12 (Sexta-feira)</div>
+                        <div class="post-date">20/12 (Sexta)</div>
                         <div class="post-type reel">🎥 Reel</div>
                     </div>
-                    <div class="post-title">3 Sinais de que você precisa de terapia comportamental</div>
-                    <div class="post-objective">🎯 Objetivo: Trazer atendimentos individuais</div>
+                    <div class="post-title">3 Sinais - precisa terapia</div>
+                    <div class="post-objective">🎯 Trazer atendimentos</div>
                     
                     <div class="video-tips">
-                        <h4>🎬 SUGESTÃO DE CORTE:</h4>
+                        <h4>🎬 CORTE:</h4>
                         <ul>
-                            <li>Antônia falando diretamente pa
+                            <li>Antônia falando para câmera</li>
+                            <li>Formato talking head dinâmico</li>
+                        </ul>
+                    </div>
+
+                    <div class="post-copy">
+                        <h4>📱 COPY:</h4>
+                        <pre>3 sinais de que você PRECISA de terapia comportamental:
+
+1️⃣ Você sempre reage da mesma forma (e se arrepende depois)
+→ Explode com todo mundo
+→ Foge de todos os conflitos
+→ Guarda mágoa e não consegue perdoar
+
+2️⃣ Você não entende porque as pessoas não te entendem
+→ Acha que todo mundo é complicado
+→ Vive tendo os mesmos problemas em relacionamentos diferentes
+→ Se sente sozinho mesmo rodeado de gente
+
+3️⃣ Você sabe o que precisa fazer, mas não consegue
+→ Quer mudar de vida mas fica parado
+→ Toma decisões ruins repetidamente
+→ Sabota suas próprias conquistas
+
+A terapia comportamental trabalha exatamente nisso:
+✓ Mudar padrões que não funcionam mais
+✓ Entender seus comportamentos
+✓ Criar estratégias práticas de mudança
+
+Não é sobre ficar falando do passado.
+É sobre construir um FUTURO diferente.
+
+📲 Atendimentos presenciais e online.
+Chama no direct e vamos conversar.
+
+#TerapiaComportamental #Psicoterapia #SaudeMental #Autoconhecimento #Mudança</pre>
+                    </div>
+
+                    <div class="video-tips">
+                        <h4>🎥 TÉCNICAS:</h4>
+                        <ul>
+                            <li>20-40 segundos</li>
+                            <li>Texto reforçando 3 pontos</li>
+                            <li>Transições rápidas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 24/12 -->
+                <div class="post-card carrossel">
+                    <div class="post-header">
+                        <div class="post-date">24/12 (Terça)</div>
+                        <div class="post-type carrossel">📊 Carrossel</div>
+                    </div>
+                    <div class="post-title">Análise Comportamental na prática</div>
+                    <div class="post-objective">🎯 Desmistificar + autoridade</div>
+                    
+                    <div class="post-copy">
+                        <h4>📱 COPY:</h4>
+                        <pre>"Mas o que vocês fazem na terapia comportamental?" 🤔
+
+Deixa eu te explicar NA PRÁTICA o que acontece nos nossos atendimentos:
+
+📊 MAPEAMOS PADRÕES
+Identifico quais comportamentos se repetem na sua vida e em que situações eles aparecem.
+
+Exemplo: Você sempre explode quando se sente desvalorizado? Sempre foge quando precisa tomar decisões importantes?
+
+🔍 INVESTIGAMOS AS CAUSAS
+Descobrimos o que mantém esses comportamentos até hoje. Não é sobre "culpar o passado", é sobre entender o que está funcionando agora.
+
+💡 CRIAMOS ESTRATÉGIAS PRÁTICAS
+Desenvolvemos juntos ferramentas reais para mudar o que não está funcionando.
+
+Isso pode incluir:
+→ Técnicas de comunicação assertiva
+→ Exercícios de autoconhecimento com DISC
+→ Estratégias para lidar com emoções intensas
+→ Planos de ação para seus objetivos
+
+📈 MEDIMOS RESULTADOS
+Avaliamos constantemente o que está mudando e ajustamos a rota quando necessário.
+
+A diferença da abordagem comportamental?
+Foco em AÇÃO e RESULTADOS, não só em conversar.
+
+Você sai de cada sessão com algo concreto para aplicar na sua vida.
+
+Se você está cansado de viver no piloto automático e quer realmente mudar seus padrões, a terapia comportamental é para você.
+
+📲 Atendimentos presenciais e online disponíveis.
+Vamos conversar?
+
+#TerapiaComportamental #AnáliseDoComportamento #Psicoterapia #Mudança #DesenvolvimentoPessoal</pre>
+                    </div>
+
+                    <div class="post-design">
+                        <h4>🎨 DESIGN:</h4>
+                        <ul>
+                            <li>Slide 1: Título + foto</li>
+                            <li>Slides 2-5: Cada etapa</li>
+                            <li>Slide 6: Benefícios + CTA</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 25/12 NATAL -->
+                <div class="post-card special">
+                    <div class="post-header">
+                        <div class="post-date">25/12 (Quarta) 🎄</div>
+                        <div class="post-type especial">⭐ NATAL</div>
+                    </div>
+                    <div class="post-title">Reflexão de Natal</div>
+                    <div class="post-objective">🎯 Conexão emocional</div>
+                    
+                    <div class="post-copy">
+                        <h4>📱 COPY:</h4>
+                        <pre>Neste Natal, um presente para você: 🎁
+
+A permissão para NÃO estar bem o tempo todo.
+
+Dezembro é pesado para muita gente.
+Cobranças, comparações, expectativas, pressões familiares.
+
+Se você está:
+→ Se sentindo sozinho no meio da multidão
+→ Fingindo estar feliz quando não está
+→ Exausto de manter as aparências
+→ Sentindo que "não é normal" se sentir assim em pleno Natal
+
+Eu te digo: você não está sozinho.
+E seus sentimentos são VÁLIDOS.
+
+O Natal não precisa ser perfeito.
+Você não precisa estar radiante.
+Está tudo bem não estar 100%.
+
+E se você decidir que 2025 é o ano da sua mudança de verdade, eu estarei aqui.
+
+Porque você merece:
+✨ Relacionamentos que te nutrem
+✨ Uma mente mais leve
+✨ Comportamentos que te aproximam dos seus objetivos
+✨ A liberdade de ser quem você realmente é
+
+Que você encontre paz, de verdade.
+E quando estiver pronto para dar os próximos passos, estarei aqui.
+
+Feliz Natal! 🎄
+
+Com carinho,
+Antônia Teodoro
+Terapeuta Comportamental
+
+#Natal #SaudeMental #Acolhimento #TerapiaComportamental #Autocompaixão</pre>
+                    </div>
+
+                    <div class="post-design">
+                        <h4>🎨 DESIGN:</h4>
+                        <ul>
+                            <li>Natalino suave (não exagerado)</li>
+                            <li>Foto Antônia com Natal discreto</li>
+                            <li>Cores: verde musgo, dourado, branco</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 27/12 -->
+                <div class="post-card reel">
+                    <div class="post-header">
+                        <div class="post-date">27/12 (Sexta)</div>
+                        <div class="post-type reel">🎥 Reel</div>
+                    </div>
+                    <div class="post-title">Liderança DISC</div>
+                    <div class="post-objective">🎯 Corporativo 2025</div>
+                    
+                    <div class="video-tips">
+                        <h4>🎬 CORTE:</h4>
+                        <ul>
+                            <li>Antônia explicando dinâmico</li>
+                            <li>Exemplos práticos</li>
+                        </ul>
+                    </div>
+
+                    <div class="post-copy">
+                        <h4>📱 COPY:</h4>
+                        <pre>A melhor liderança NÃO é a que faz todo mundo igual.
+
+É a que entende que cada pessoa precisa de uma ABORDAGEM diferente.
+
+Quer ver como aplicar DISC na liderança?
+
+🔴 Com perfil DOMINANTE:
+→ Dê autonomia e desafios
+→ Seja direto, não enrole
+→ Foque em resultados e reconheça conquistas
+
+🟡 Com perfil INFLUENTE:
+→ Celebre publicamente
+→ Dê espaço para criatividade
+→ Inclua em decisões de equipe
+
+🟢 Com perfil ESTÁVEL:
+→ Dê tempo para adaptação em mudanças
+→ Reconheça a lealdade
+→ Ofereça segurança e clareza
+
+🔵 Com perfil CONFORME:
+→ Forneça informações detalhadas
+→ Dê tempo para análise
+→ Respeite processos e padrões de qualidade
+
+Quando você lidera entendendo os perfis, você:
+✓ Reduz conflitos
+✓ Aumenta engajamento
+✓ Melhora resultados
+✓ Cria um ambiente mais saudável
+
+E ambiente saudável = menos acidentes = NR1 cumprida de verdade.
+
+📲 Quer começar 2025 com uma equipe mais alinhada?
+Palestras e treinamentos in company disponíveis.
+
+#Liderança #DISC #GestãoDePessoas #RH #DesenvolvimentoOrganizacional #NR1</pre>
+                    </div>
+
+                    <div class="video-tips">
+                        <h4>🎥 TÉCNICAS:</h4>
+                        <ul>
+                            <li>30-45 segundos</li>
+                            <li>Recursos visuais (gráficos)</li>
+                            <li>Ritmo dinâmico</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 31/12 ANO NOVO -->
+                <div class="post-card special">
+                    <div class="post-header">
+                        <div class="post-date">31/12 (Quarta) 🎆</div>
+                        <div class="post-type especial">⭐ ANO NOVO</div>
+                    </div>
+                    <div class="post-title">Promessas realistas 2025</div>
+                    <div class="post-objective">🎯 Inspirar + suporte</div>
+                    
+                    <div class="post-copy">
+                        <h4>📱 COPY:</h4>
+                        <pre>Todo mundo vai te desejar um "2025 incrível".
+
+Eu vou ser realista com você: ✨
+
+2025 pode ser um ano transformador.
+MAS só se você estiver disposto a fazer diferente.
+
+Ano novo não apaga padrões antigos.
+Calendário muda, comportamento não.
+
+Então vou te fazer uma proposta:
+
+Em vez de prometer que vai:
+❌ "Ser outra pessoa"
+❌ "Mudar tudo de uma vez"
+❌ "Nunca mais errar"
+
+Que tal você se comprometer a:
+✅ Entender seus padrões comportamentais
+✅ Fazer uma mudança real por vez
+✅ Pedir ajuda quando precisar
+✅ Ser paciente com seu processo
+
+Porque mudança de verdade não acontece na virada.
+Acontece sessão por sessão, dia após dia, escolha após escolha.
+
+E se você está cansado de fazer as mesmas promessas todo ano e não cumprir nenhuma...
+
+Talvez 2025 seja o ano de fazer diferente.
+Não sozinho. Com apoio profissional.
+
+📲 Vagas abertas para atendimento individual.
+Presencial e online.
+
+Vamos fazer de 2025 o ano que você REALMENTE muda?
+
+Te espero! 🎆
+
+#AnoNovo #2025 #Mudança #TerapiaComportamental #MetasReais #DesenvolvimentoPessoal</pre>
+                    </div>
+
+                    <div class="post-design">
+                        <h4>🎨 DESIGN:</h4>
+                        <ul>
+                            <li>Ano novo elegante (não cafofo)</li>
+                            <li>Foto Antônia look elegante</li>
+                            <li>Cores: preto, dourado, branco</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JANEIRO -->
+            <div class="month-section">
+                <div class="month-title">✨ JANEIRO 2026</div>
+
+                <!-- 03/01 -->
+                <div class="post-card reel">
+                    <div class="post-header">
+                        <div class="post-date">03/01 (Sexta)</div>
+                        <div class="post-type reel">🎥 Reel</div>
+                    </div>
+                    <div class="post-title">Como não desistir das metas</div>
+                    <div class="post-objective">🎯 Motivação pós-festas</div>
+                    
+                    <div class="video-tips">
+                        <h4>🎬 CORTE:</h4>
+                        <ul>
+                            <li>Antônia dicas práticas</li>
+                            <li>Formato educativo rápido</li>
+                        </ul>
+                    </div>
+
+                    <div class="post-copy">
+                        <h4>📱 COPY:</h4>
+                        <pre>Tá todo mundo motivado hoje, né? 😅
+
+Mas deixa eu te contar uma verdade:
+
+86% das pessoas desistem das metas de ano novo ATÉ FEVEREIRO.
+
+Por quê? Porque:
+❌ Prometem demais
+❌ Não têm estratégia
+❌ Voltam pros mesmos padrões
+
+Quer ser dos 14% que conseguem?
+
+Faça isso agora em janeiro:
+
+1️⃣ ESCOLHA UMA COISA SÓ
+Não dez. UMA. A mais importante.
+
+2️⃣ QUEBRE EM PASSOS PEQUENOS
+"Emagrecer 20kg" → "Caminhar 15min, 3x na semana"
+"Mudar de carreira" → "Fazer 1 curso esse mês"
+
+3️⃣ IDENTIFIQUE O QUE SABOTA
+Qual comportamento SEU atrapalha?
+Procrastinação? Perfeccionismo? Medo?
+
+4️⃣ PEÇA AJUDA
+Sozinho é difícil. Com apoio profissional, é possível.
+
+A diferença entre conseguir e desistir está em COMO você faz, não só no que você quer.
+
+E é exatamente nisso que a terapia comportamental te ajuda.
+
+📲 Vagas abertas para janeiro.
+Vamos fazer acontecer JUNTOS em 2025?
+
+#Janeiro #Metas2025 #TerapiaComportamental #Mudança #Foco #Disciplina</pre>
+                    </div>
+
+                    <div class="video-tips">
+                        <h4>🎥 TÉCNICAS:</h4>
+                        <ul>
+                            <li>20-35 segundos</li>
+                            <li>Energia alta natural</li>
+                            <li>Estatísticas na tela</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 07/01 -->
+                <div class="post-card carrossel">
+                    <div class="post-header">
+                        <div class="post-date">07/01 (Terça)</div>
+                        <div class="post-type carrossel">📊 Carrossel</div>
+                    </div>
+                    <div class="post-title">DISC e Produtividade</div>
+                    <div class="post-objective">🎯 Educacional + corporativo</div>
+                    
+                    <div class="post-copy">
+                        <h4>📱 COPY:</h4>
+                        <pre>Produtividade NÃO é igual para todo mundo. 🎯
+
+O que funciona pra mim pode sabotar você.
+E vice-versa.
+
+Entenda como cada perfil DISC trabalha melhor:
+
+🔴 PERFIL DOMINANTE
+PRECISA DE:
+→ Metas desafiadoras e claras
+→ Autonomia para decidir
+→ Resultados visíveis rápido
+→ Competição saudável
+
+EVITE:
+❌ Microgerenciamento
+❌ Reuniões longas sem objetivo
+❌ Processos lentos demais
+
+🟡 PERFIL INFLUENTE
+PRECISA DE:
+→ Trabalho em equipe
+→ Variedade de tarefas
+→ Reconhecimento público
+→ Ambiente leve e colaborativo
+
+EVITE:
+❌ Isolamento
+❌ Tarefas muito repetitivas
+❌ Ambientes rígidos demais
+
+🟢 PERFIL ESTÁVEL
+PRECISA DE:
+→ Rotina e previsibilidade
+→ Tempo para se adaptar a mudanças
+→ Ambiente harmonioso
+→ Instruções claras
+
+EVITE:
+❌ Mudanças bruscas constantes
+❌ Pressão por velocidade excessiva
+❌ Conflitos não resolvidos
+
+🔵 PERFIL CONFORME
+PRECISA DE:
+→ Tempo para analisar e planejar
+→ Padrões de qualidade claros
+→ Informações detalhadas
+→ Processos bem definidos
+
+EVITE:
+❌ Pressão para decidir rápido
+❌ Falta de dados/informações
+❌ "Jeitinhos" e improvisações
+
+Quando você entende seu perfil:
+✓ Para de se comparar
+✓ Organiza o trabalho do SEU jeito
+✓ Produz mais com menos esforço
+✓ Fica menos frustrado
+
+E quando a EMPRESA entende os perfis da equipe:
+✓ Delega melhor
+✓ Reduz conflitos
+✓ Aumenta resultados
+✓ Cumpre NR1 de verdade (cuidando das pessoas)
+
+📲 Atendimentos individuais OU palestras corporativas.
+Vamos otimizar 2025?
+
+#DISC #Produtividade #GestãoDeTempo #Autoconhecimento #RH #GestãoDePessoas</pre>
+                    </div>
+
+                    <div class="post-design">
+                        <h4>🎨 DESIGN:</h4>
+                        <ul>
+                            <li>Slide 1: Título + foto</li>
+                            <li>Slides 2-5: Perfil por slide</li>
+                            <li>Slide 6: Benefícios gerais</li>
+                            <li>Slide 7: CTA</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 10/01 -->
+                <div class="post-card reel">
+                    <div class="post-header">
+                        <div class="post-date">10/01 (Sexta)</div>
+                        <div class="post-type reel">🎥 Reel</div>
+                    </div>
+                    <div class="post-title">3 Gatilhos acidentes NR1</div>
+                    <div class="post-objective">🎯 Corporativo + palestras</div>
+                    
+                    <div class="video-tips">
+                        <h4>🎬 CORTE:</h4>
+                        <ul>
+                            <li>Antônia com autoridade</li>
+                            <li>Ambientes corporativos</li>
+                        </ul>
+                    </div>
+
+                    <div class="post-copy">
+                        <h4>📱 COPY:</h4>
+                        <pre>3 gatilhos emocionais que AUMENTAM acidentes de trabalho: ⚠️
+
+(E que a sua empresa precisa cuidar AGORA)
+
+1️⃣ ESTRESSE CRÔNICO NÃO GERENCIADO
+Colaborador estressado:
+→ Perde atenção
+→ Toma decisões impulsivas
+→ Ignora procedimentos de segurança
+
+2️⃣ CONFLITOS MAL RESOLVIDOS NA EQUIPE
+Quando a equipe não se comunica bem:
+→ Informações importantes se perdem
+→ Ninguém pede ajuda
+→ Cada um faz "do seu jeito"
+
+3️⃣ LIDERANÇA QUE NÃO ENTENDE COMPORTAMENTO
+Gestor que não conhece DISC:
+→ Pressiona do jeito errado
+→ Desmotiva sem perceber
+→ Cria ambiente tóxico
+
+O resultado? 
+Acidentes, afastamentos, processos, prejuízo.
+
+A NR1 existe exatamente pra isso:
+Proteger o trabalhador ANTES do acidente.
+
+E proteção começa na MENTE, não só no EPI.
+
+Como terapeuta comportamental e especialista em DISC, desenvolvo treinamentos que:
+✓ Ensinam gestão de estresse
+✓ Melhoram comunicação entre equipes
+✓ Capacitam líderes a entender comportamento
+✓ Previnem acidentes pela raiz
+
+📲 Sua empresa está realmente cumprindo a NR1?
+Chama no direct e vamos conversar sobre palestras para 2025.
+
+Janeiro é o mês de planejar a segurança do ano inteiro.
+
+#NR1 #SegurançaDoTrabalho #SaudeMental #PalestrasCorporativas #CIPA #RH #SST</pre>
+                    </div>
+
+                    <div class="video-tips">
+                        <h4>🎥 TÉCNICAS:</h4>
+                        <ul>
+                            <li>30-40 segundos</li>
+                            <li>Tom sério mas não alarmista</li>
+                            <li>Dados na tela</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <h3>📦 Entregáveis</h3>
+            <p>✅ 11 conteúdos estratégicos</p>
+            <p>✅ Copies completas</p>
+            <p>✅ Orientações de design</p>
+            <p>✅ Sugestões de cortes</p>
+            <p>✅ Hashtags estratégicas</p>
+            <p>✅ CTA's otimizados</p>
+            
+            <div class="signature">
+                Desenvolvido por Giz Marketing Digital<br>
+                Para Antônia Teodoro<br>
+                Dezembro 2025 - Janeiro 2026
+            </div>
+        </div>
+    </div>
+</body>
+</html>
